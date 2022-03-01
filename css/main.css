@@ -1,0 +1,57 @@
+* {
+    font-family: 'Verdana';
+    text-decoration: none;
+    margin: 0em;
+}
+body {
+    background-image: url('images/pattern-background-desktop.svg');
+}
+h1 {
+    font-size: 24px;
+    padding: 1em;
+}
+.order-container {
+    padding: 2em;
+    margin: 15% auto;
+    width: 20%;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.05);
+}
+
+.order-img {
+    background-image: url('images/illustration-hero.svg');
+}
+
+.order-details {
+    padding: 1em;
+}
+
+.order-plan {
+    padding: 2em;
+}
+
+.button-proceed {
+    padding: 1em 0.5em 2em;
+    display: inline-block;
+    border-radius: 1em;
+    background-color: blue;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 80%;
+    height: 8px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 255, 0.2);
+}
+.button-cancel {
+    padding: 2em;
+    display: block;
+    font-size: 12px;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
