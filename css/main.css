@@ -1,13 +1,15 @@
 * {
     margin: 0px;
     text-decoration: none;
-    font-family: Verdana;
 }
 body {
-    background-color: #E0E8FF;
+    background-color: hsl(225, 100%, 94%);
     background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    font-family: "Red Hat Display", Verdana, Arial;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /*Order Summary Card*/
@@ -25,22 +27,23 @@ body {
 }
 
 /*Order Details*/
-.order-details {
+div.order-details {
     margin: 50% auto;
     width: 100%;
     position: absolute;
     text-align: center;
 }
-.order-details h1 {
+h1.order-details {
     margin: 2em 1em auto;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 24px;
+    color: hsl(223, 47%, 23%);
 }
-.order-details p {
+p.order-details {
     margin: 1em auto;
     width: 80%;
     line-height: 25px;
-    color: rgba(0, 0, 0, 0.6);
+    color: hsl(224, 23%, 55%);
 }
 
 /*Order Package Plan*/
@@ -50,16 +53,21 @@ body {
     width: 80%;
     height: 5em;
     border-radius: 10px;
-    background-color: #F8F9FE;
+    background-color: hsl(225, 100%, 98%);
 }
-.package-container a {
+a#plan-change:link, a#plan-change:visited {
     margin: 1em 1.5em;
     position: relative;
     top: 15px;
     float: right;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
+    color: hsl(245, 75%, 52%);
     text-decoration: underline;
+}
+a#plan-change:hover, a#plan-change:active {
+    color: hsl(245, 75%, 65%);
+    text-decoration: none;
 }
 .package-icon {
     margin: 1em 1.5em;
@@ -76,45 +84,58 @@ body {
 }
 #plan-name {
     position: relative;
-    right: 5px;
-    font-weight: bold;
+    right: 10px;
     font-size: 16px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
 }
 #plan-price {
     position: relative;
     top: 10px;
     right: 10px;
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.6);
+    color: hsl(224, 23%, 55%);
 }
 
 /*Order Buttons*/
-.button-proceed {
+a#button-proceed:link, a#button-proceed:visited {
     display: block;
     margin: 1em auto;
     padding: 1em 0.5em 0.5em 0.5em;
     width: 80%;
     height: 2em;
     border-radius: 10px;
-    background-color: #382AE1;
+    background-color: hsl(245, 75%, 52%);
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     color: #FFFFFF;
-    box-shadow: 0px 15px 15px rgba(56, 42, 255, 0.2);
+    box-shadow: 0px 15px 15px hsla(245, 75%, 52%, 0.2);
 }
-.button-cancel {
+a#button-proceed:hover, a#button-proceed:active {
+    background-color: hsl(245, 75%, 65%);
+    box-shadow: 0px 15px 15px hsla(245, 75%, 65%, 0.2);
+}
+a#button-cancel:link, a#button-cancel:visited {
     display: block;
-    margin: 3em auto 1em auto;
+    margin: 2.5em auto 1em auto;
     font-size: 14px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.6);
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+a#button-cancel:hover, a#button-cancel:active {
+    color: hsl(223, 47%, 23%);
 }
 
 /*Footer - Attribution*/
-.attribution {
+div.attribution {
     margin: auto;
-    font-size: 11px; text-align: center;
+    font-size: 12px; 
+    color: hsl(223, 47%, 23%);
+    text-align: center;
 }
-.attribution a {
+a.attribution:link, a.attribution:visited {
     color: hsl(228, 45%, 44%);
+}
+a.attribution:hover, a.attribution:active {
+    color: hsl(245, 75%, 52%);
 }
