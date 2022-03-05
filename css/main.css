@@ -34,7 +34,7 @@ div.order-details {
     text-align: center;
 }
 h1.order-details {
-    margin: 2em 1em auto;
+    margin: 2em auto 1em auto;
     font-weight: 900;
     font-size: 24px;
     color: hsl(223, 47%, 23%);
@@ -138,4 +138,66 @@ a.attribution:link, a.attribution:visited {
 }
 a.attribution:hover, a.attribution:active {
     color: hsl(245, 75%, 52%);
+}
+
+
+
+
+/*Mobile Layout Resize*/
+@media screen and (max-width: 375px) {
+
+/*Order Summary Card*/
+.order-container {
+    margin: 15% auto;
+    width: 85%;
+    height: 550px;
+}
+
+/*Order Details*/
+div.order-details {
+    margin: 50% auto;
+}
+h1.order-details {
+    margin: 1em auto 0.5em auto;
+}
+p.order-details {
+    margin: 0.5em auto;
+}
+
+/*Order Package Plan*/
+.package-container {
+    height: 4em;
+}
+a#plan-change:link, a#plan-change:visited {
+    margin: 0.5em;
+    font-size: 14px;
+}
+.package-icon {
+    margin: 0.5em;
+}
+.plan-container {
+    margin: 1em 0.5em;
+    float: left;
+}
+#plan-name {
+    bottom:  5px;
+    right: 5px;
+    font-size: 14px;
+}
+#plan-price {
+    position: relative;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+}
+
+/*Order Buttons*/
+a#button-cancel:link, a#button-cancel:visited {
+    margin: 1.5em auto 1em auto;
+}
+
+/*Footer - Attribution*/
+div.attribution {
+    display: none;
+}
 }
